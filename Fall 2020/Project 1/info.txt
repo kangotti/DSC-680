@@ -1,0 +1,48 @@
+Context
+Since 2008, guests and hosts have used Airbnb to expand on traveling possibilities and present more unique, personalized way of experiencing the world. This dataset describes the listing activity and metrics in NYC, NY for 2019.
+
+Content
+This data file includes all needed information to find out more about hosts, geographical availability, necessary metrics to make predictions and draw conclusions.
+
+Acknowledgements
+This public dataset is part of Airbnb, and the original source can be found on this website.
+
+Inspiration
+What can we learn about different hosts and areas?
+What can we learn from predictions? (ex: locations, prices, reviews, etc)
+Which hosts are the busiest and why?
+Is there any noticeable difference of traffic among different areas and what could be the reason for it?
+
+Data 1
+
+https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data?select=AB_NYC_2019.csv
+
+Data 2
+
+https://data.world/ajsanne/sf-airbnb-listings
+
+sources
+
+https://www.thefrugalgene.com/airbnb-popular/
+
+https://www.investopedia.com/articles/personal-finance/032814/pros-and-cons-using-airbnb.asp
+
+https://www.ryerson.ca/news-events/news/2016/10/why-tourists-choose-airbnb-over-hotels/
+
+https://www.skyscanner.com/tips-and-inspiration/hotels/airbnb-vs-hotels
+
+https://www.airbnb.com/help/article/5/how-do-i-choose-what-type-of-place-to-stay
+
+https://www.mashvisor.com/blog/airbnb-income-property-vs-room/
+
+https://www.dezyre.com/article/how-data-science-increased-airbnbs-valuation-to-25-5-bn/199
+
+https://venturebeat.com/2015/06/30/how-we-scaled-data-science-to-all-sides-of-airbnb-over-5-years-of-hypergrowth/
+
+https://neilpatel.com/blog/how-airbnb-uses-data-science/
+
+https://towardsdatascience.com/predicting-airbnb-prices-with-machine-learning-and-location-data-5c1e033d0a5a
+
+
+
+
