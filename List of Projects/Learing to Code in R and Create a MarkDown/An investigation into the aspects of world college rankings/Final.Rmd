@@ -1,0 +1,241 @@
+---
+title: "An investigation into the aspects of world college rankings: What are the
+  main factors that go into which schools are highly ranked?"
+author: "KAngotti"
+date: "5/28/2020"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+## Introduction
+
+Most often than not, when looking for places to apply to college requires a bit of research is required. However, more often than not, family, or political ties could add to a decision-making process. Take away school allegiance searching for the best school sometimes just comes down to which school is the best. There are many national and international ranking systems out there to include the Center for World University Rankings (O'Neill, 2018). However, does it truly matter where you go to school? Do you get the same education going to an ivy league, private or public university? I am interested in discovering if that truly matters.
+
+H0 quality of education does not affect world ranking.
+H1 quality of education has a strong relationship with work ranking.
+
+## Data
+
+```
+This project consists of four data sets that look at different aspects of college rankings. From these four datasets, the main variables, world_rankings, citations, quality_of_education, quality_of_faculty,  alumni_employment, and score, can be analyzed. Each of these variables helps determine the rankings of each school. From the four datasets, I merged them into a single dataset called MergedDataset_All_Data, which carried over nine variables after the data was cleaned. Variables that were left out comprised of NAs from variables of all four datasets did not have incommon. This allows me to look at the most prevalent variables over all the available data. You will find a summary of the first six rows below. To get a deeper analysis of the other variables, I created two other datasets. MergedDataset_2, and MergedDataset_3. 
+
+
+head(MergedDataset_All_Data)
+```
+
+```
+The MergedDataset_1 will provide two datasets CWUR220 and the University world rank Data. These two datasets will provide nine variables and 4200 observations. This dataset is similar to the All Data dataset; however, the variable citations are represented in number form. This is the main reason for the need to create two other datasets, the four original datasets had the citations variable represented in number form, and two represent the same variable as a percentage. To allow for detailed analysis to occur, they would have to be analyzed separately.
+
+head(MergedDataset_1_CWUR_UwrD)
+```
+
+```
+MergedDataset_2, similar to one,  comprises the times dataset and the world university ranking. This dataset has the variable citations represented as a percentage. To properly make detailed analysis against this variable, any summary statistic or plotting needed to be conducted with only the two datasets listed. This allows for better representation where any analysis conducted from the MergedDataset_All_Data dataset will be limited to a handful of variables.  
+
+head(MergedDataset_2_times_wur2020)
+```
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+## Tables
+
+# Calculates correlation statistics for variable relationships in the MergedDataset_All_Data dataset.
+
+cor_All_Data <- cor(MergedDataset_All_Data[,c("quality_of_education","world_rank", "quality_of_faculty", "citations")], use="complete")
+
+cor_All_Data
+                     citations     quality_of_education  quality_of_faculty  world_rank
+citations            1.0000000            0.6112599          0.6564861       0.8649040
+quality_of_education 0.6112599            1.0000000          0.7701719       0.6634255
+quality_of_faculty   0.6564861            0.7701719          1.0000000       0.6748891
+world_rank           0.8649040            0.6634255          0.6748891       1.0000000
+
+The correlation matrix of these four variables demonstrates differing degrees of correlation. Overall, the MergedDataset_All_Data was shown to have a better representation of correlation than the other two datasets. The MergedDataset_All_Data correlation matrix suggests that there is a positive correlation between all four of the tested variables. World_rank and citations return the highest correlation of .86, followed by the quality of faculty to quality of education with .77. You can see from the above matrix chart how variables have meaningful relationships. From the results, you are now able to see what determines a school's world ranking. You will see scatterplots for each of these variables below in the section entitled Including Plots.
+
+# Calculates correlation between citations and world ranking as well as quality of education and quality of faculty for MergedDataset_All_Data dataset.
+
+```
+MergedDataset_All_Data, cor.test(citations, world_rank, alternative="two.sided", method="pearson")
+
+Pearson's product-moment correlation
+
+data:  citations and world_rank
+t = 228.53, df = 6652, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.9390410 0.9444731
+sample estimates:
+      cor 
+0.9418185 
+```
+
+```
+MergedDataset_All_Data, cor.test(quality_of_education, quality_of_faculty, alternative="two.sided", method="pearson")
+
+Pearson's product-moment correlation
+
+data:  quality_of_education and quality_of_faculty
+t = 58.756, df = 2393, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.7515914 0.7844174
+sample estimates:
+      cor 
+0.7685096
+```
+
+# Calculates the linear relatonship of variables for MergedDataset_All_Data dataset.
+
+Constructing a linear regression model allows for further exploration of the impact of the variables that had significance from the correlation matrix, the formula, and tables for the linear models are shown below.
+
+```
+lm(formula = citations ~ world_rank, data = MergedDataset_All_Data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-502.86  -54.22   43.52   71.16 1757.16 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -66.865375   3.051205  -21.91   <2e-16 ***
+world_rank    0.976797   0.004274  228.53   <2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 169.3 on 6652 degrees of freedom
+  (1545 observations deleted due to missingness)
+Multiple R-squared:  0.887,	Adjusted R-squared:  0.887 
+F-statistic: 5.223e+04 on 1 and 6652 DF,  p-value: < 2.2e-16
+
+```
+
+The statistical summary suggests that it is a strong linear relationship between the selected variables. The t-value is quite large 228.53, which is above +2, indicating an acceptable correlation. The standard error(Sb) is deficient .004, indicating a low spread of the mean. Additionally, the p-value is very close to zero, suggesting to reject the NULL hypothesis, and that there is a strong correlation between the selected variables citations and world_rank. 
+
+```
+lm(formula = quality_of_education ~ quality_of_faculty, data = MergedDataset_All_Data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-312.24  -27.77   34.23   34.62  339.54 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)         16.0417     4.6017   3.486 0.000499 ***
+quality_of_faculty   1.4511     0.0247  58.756  < 2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 80.84 on 2393 degrees of freedom
+  (5804 observations deleted due to missingness)
+Multiple R-squared:  0.5906,	Adjusted R-squared:  0.5904 
+F-statistic:  3452 on 1 and 2393 DF,  p-value: < 2.2e-16
+```
+
+The statistical summary suggests that it is a strong linear relationship between the selected variables. The t-value is large 58.75, which is above +2, indicating an acceptable correlation. The standard error(Sb) is deficient .0247, indicating a low spread of the mean. Additionally, the p-value is very close to zero, suggesting to reject the NULL hypothesis, and that there is a strong correlation between the selected variables quality of education and quality of faculty. 
+
+```
+lm(formula = quality_of_education ~ world_rank, data = MergedDataset_All_Data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-541.87  -83.14   11.72   76.21  297.02 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 174.083187   3.533745   49.26   <2e-16 ***
+world_rank    0.214837   0.006228   34.50   <2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 106.5 on 2616 degrees of freedom
+  (5581 observations deleted due to missingness)
+Multiple R-squared:  0.3127,	Adjusted R-squared:  0.3124 
+F-statistic:  1190 on 1 and 2616 DF,  p-value: < 2.2e-16
+
+```
+
+The statistical summary suggests that it is a strong linear relationship between the selected variables. The t-value is large 34.50, which is above +2, indicating an acceptable correlation. The standard error(Sb) is deficient .006, indicating a low spread of the mean. Additionally, the p-value is very close to zero, also suggesting to reject the NULL hypothesis, there is a strong correlation between the selected variables quality of education and world rank. 
+
+```
+(LinearModel.2, LinearModel.3)
+1: lm(formula = citations ~ world_rank, data = MergedDataset_All_Data)
+2: lm(formula = quality_of_education ~ quality_of_faculty, data = MergedDataset_All_Data)
+
+                   Model 1 Model 2
+(Intercept)         -66.87   16.04
+SE                    3.05    4.60
+                                  
+world_rank         0.97680        
+SE                 0.00427        
+                                  
+quality_of_faculty          1.4511
+SE                          0.0247
+```
+
+## Dataset Summary
+
+#Display the summary statistic for the MergedDataset_All_Data 
+
+```{r MergedDataset_All_Data}
+summary(MergedDataset_All_Data)
+```
+
+#Display the summary statistic for the MergedDataset_1_CWUR_UwrD 
+
+```{r MergedDataset_1_CWUR_UwrD}
+summary(MergedDataset_1_CWUR_UwrD)
+```
+
+#Display the summary statistic for the MergedDataset_2_times_wur2020
+
+```{r MergedDataset_2_times_wur2020}
+summary(MergedDataset_2_times_wur2020)
+```
+
+## Including Plots
+
+The graphs below show the variables that returned positive correlation from the correlation matrix. The graphs indicate that as citations rank returned high results, the world rank was higher. The same went for quality of education, as that variable returned high results to the quality of faculty; the rank was also higher. Currently, from these four variables, the problem statement has held true. The higher quality of education, meaning below a score of 100-200, the higher the schools were ranked on overall.  
+
+```{r, echo=FALSE}
+scatterplot(citations~world_rank, log="xy", regLine=TRUE, smooth=FALSE, boxplots=FALSE, data=MergedDataset_All_Data)
+```
+The scatterplot above shows how the correlation between the two variables affects each other. The world rank determined by citations follows the trend line quite well, indicating that as the citations rank decreases or move higher in value, the world rank tends to do the same. A low value here indicates a higher ranking. Most of the schools tend to fall in the fifty to one hundred rankings and only a small amount of schools have a higher rank.
+
+```{r, echo=FALSE}
+scatterplot(quality_of_faculty~quality_of_education, log="xy", regLine=TRUE, smooth=FALSE, boxplots=FALSE, jitter=list(x=1, y=1), data=MergedDataset_All_Data)
+```
+Above the scatterplot shows the correlation between the variables and there affect on one another. Quality of faculty seems to have a direct effect on the quality of education, as you can see from the correlation matrix in the above section, they both, in turn, have a positive effect on the overall ranking. In this plot, the large number of points fall in the 100-200 range, whereas the quality of faculty decreases the quality of education also decreases.  
+
+```{r, echo=FALSE}
+scatterplot(quality_of_education~world_rank, log="xy", regLine=TRUE, smooth=FALSE, boxplots='xy', data=MergedDataset_All_Data, subset=world_rank < 200)
+```
+This report also added a plot for quality f education and world rank to show the significance of the variable to the overall ranking. As you can see that as the quality of education decreases, so does the world ranking. Most of the points fall in the 50-200 range. Anything above the rank of 20 for quality of education tended to affect the world ranking drastically. (note: world ranking was subset to 200 for better visual analysis).
+
+```{r, echo=FALSE}
+with(MergedDataset_All_Data, Hist(quality_of_education, scale="percent", breaks="Sturges", col="darkgray"))
+```
+The above bar graph shows the significance of the quality of education variable. From the graph, you will see that a large percentage of over 50% fall above 300, only about 20% of the points have a ranking under 100. It would be a good thing to note here that there are 8199 observations in this dataset so that 20% is very low, indicating further that quality if education profoundly affects the world ranking.
+
+```{r, echo=False}
+with(MergedDataset_All_Data, Hist(quality_of_faculty, scale="percent", breaks="Sturges", col="darkgray"))
+```
+
+```{r, echo=FALSE}
+with(MergedDataset_All_Data, qqPlot(quality_of_education, dist="norm", id=list(method="y", n=2, 
+labels=rownames(MergedDataset_All_Data))))
+```
+[1]    2 2021
+
+## Conclusion 
+
+After working through different approaches and summary statistics, I was able to conclude that although there are multiple variables to look at, the ones that had the most significant were citations, quality f education, and quality of faculty when look at the work rankings of a school. Citations seemed to have had the most significant effect on the ranking, followed closely by the quality of education. When looking at the primary goal of this project, which was to see if education quality was good, no matter where you attend school, the overwhelming answer is it does. When looking at the data, you can see all of the top universities also ranked high in the quality of education. After reviewing both linear regression models, the p-value and standard error confirm its significance to the overall ranking. When comparing the significance to other variables in the dataset, such as student to teacher ratio or alumni employment, the correlation was not a factor as much. In all summary statistics, the NULL hypothesis was rejected, and the alternate hypothesis was accepted. Overall, I would have liked to have been able to answer some of my other research questions like which countries had the highest rankings, but assigning a value to the country variable would not have been realistic for comparison.   
+
+
+
