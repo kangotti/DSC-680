@@ -18,6 +18,25 @@ For any furhter inquires please contact me at, [Email](kevin.j.angotti@gmail.com
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/kangotti/Data-Science-Portfolio/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
