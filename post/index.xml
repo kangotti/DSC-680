@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Kevin Angotti</title>
+    <link>https://kangotti.github.io/Data-Science-Portfolio2/post/</link>
+    <description>Recent content in Projects on Kevin Angotti</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Jan 2020 12:00:00 -0500</lastBuildDate><atom:link href="https://kangotti.github.io/Data-Science-Portfolio2/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project_1: Creating a simple application</title>
+      <link>https://kangotti.github.io/Data-Science-Portfolio2/post/project-1/</link>
+      <pubDate>Mon, 13 Jan 2020 11:25:05 -0400</pubDate>
+      
+      <guid>https://kangotti.github.io/Data-Science-Portfolio2/post/project-1/</guid>
+      <description>This projects aim was to create a weather application by coding within the Python programing language. The application takes in either a location by text or zip code to provide the weather on that location. The application uses an API key from the openweather.org site to provide the results. Link to Github Repository</description>
+    </item>
+    
+    <item>
+      <title>Project_2: Learning to Coding in R</title>
+      <link>https://kangotti.github.io/Data-Science-Portfolio2/post/project-2/</link>
+      <pubDate>Mon, 13 Jan 2020 11:25:05 -0400</pubDate>
+      
+      <guid>https://kangotti.github.io/Data-Science-Portfolio2/post/project-2/</guid>
+      <description>When looking for places to apply to college, most often than not, a bit of research is required. However, more often than not, family or political ties could add to a decision-making process. Take away school allegiance searching for the best school sometimes just comes down to which school is the best. There are many national and international ranking systems out there to include the Center for World University Rankings (O&amp;rsquo;Neill, 2018).</description>
+    </item>
+    
+    <item>
+      <title>Project_3: Learning to Code in Python</title>
+      <link>https://kangotti.github.io/Data-Science-Portfolio2/post/project-3/</link>
+      <pubDate>Mon, 13 Jan 2020 11:25:05 -0400</pubDate>
+      
+      <guid>https://kangotti.github.io/Data-Science-Portfolio2/post/project-3/</guid>
+      <description>This project focused on predicting which sport is the toughest by way of skill. The data took in different attributes such as strength, agility, endurance, durability and analyzed these different aspects by popularity.   Link to Github Repository</description>
+    </item>
+    
+    <item>
+      <title>Project_4: Joining Data of Different Types</title>
+      <link>https://kangotti.github.io/Data-Science-Portfolio2/post/project-4/</link>
+      <pubDate>Mon, 13 Jan 2020 11:25:05 -0400</pubDate>
+      
+      <guid>https://kangotti.github.io/Data-Science-Portfolio2/post/project-4/</guid>
+      <description>In this project, the main goal was learning clean data with EDA then creating table joins. The project looked at different types of Superhero abilities and compared them to popularity based on website rankings. The projects took in three different data sources, HTML, API, and excel. Excel data was retrieved from Kaggle.com while the HTML came from IMBD, and the API data was accessed from a world ranking superhero database via an API key.</description>
+    </item>
+    
+    <item>
+      <title>Project_5: Coding Models in Python and R</title>
+      <link>https://kangotti.github.io/Data-Science-Portfolio2/post/project-5/</link>
+      <pubDate>Mon, 13 Jan 2020 11:25:05 -0400</pubDate>
+      
+      <guid>https://kangotti.github.io/Data-Science-Portfolio2/post/project-5/</guid>
+      <description>This project expanded on project 4 to look at how a superhero might be selected for a movie or television series based on their history and powers information. The use of Natural Language Processing for text mining was attempted to make the predictions. The data was retrieved from Kaggle and analyzed a superhero’s overall score from their different abilities, and compared the results to the history text and powers text variables within the dataset.</description>
+    </item>
+    
+    <item>
+      <title>Project_6: A Data Science Project Start to Finish</title>
+      <link>https://kangotti.github.io/Data-Science-Portfolio2/post/project-6/</link>
+      <pubDate>Mon, 13 Jan 2020 11:25:05 -0400</pubDate>
+      
+      <guid>https://kangotti.github.io/Data-Science-Portfolio2/post/project-6/</guid>
+      <description>This project aims to predict police shootings in the United States. Police shootings are a hot button topic in the United States as their frequency increases year over year. By examining data provided by the FBI, the project team will provide insights into factors contributing to these shootings that may aid in reducing their numbers.
+The project&amp;rsquo;s main goal was to determine if the fatal shooting could be predicted based on race, age, or signs of mental illness.</description>
+    </item>
+    
+    <item>
+      <title>Project_7: Different Way To Present Data</title>
+      <link>https://kangotti.github.io/Data-Science-Portfolio2/post/project-7/</link>
+      <pubDate>Mon, 13 Jan 2020 11:25:05 -0400</pubDate>
+      
+      <guid>https://kangotti.github.io/Data-Science-Portfolio2/post/project-7/</guid>
+      <description>This Project contains all data and different analytic approaches that can be used to look at a problem. The Project was to create a dashboard, PowerPoint, Blog post, infographic, and finally tie it together with a video presentation. This was my first interaction with a blog and an infographic; both were very informative in understanding how to publicize a project. The data was pulled from the Nation Highway and Safety Board as well as the FAA.</description>
+    </item>
+    
+    <item>
+      <title>Project_8: Data Science Project 1</title>
+      <link>https://kangotti.github.io/Data-Science-Portfolio2/post/project-8/</link>
+      <pubDate>Mon, 13 Jan 2020 11:25:05 -0400</pubDate>
+      
+      <guid>https://kangotti.github.io/Data-Science-Portfolio2/post/project-8/</guid>
+      <description>Travel is a billion-dollar industry, and the hotel or lodging sector takes a large portion of the revenue. Airbnb has quickly become a staple in the travel sector. With their bookable locations in just about every travel destination worldwide, you can easily see why they have become so successful. This project looks to finding ways a customer can locate the best host to book based on location and affordability. One of the main goals was to determine if a plugin or application could be created to help make future Airbnb bookings.</description>
+    </item>
+    
+    <item>
+      <title>Project_9: Data Science Project 2</title>
+      <link>https://kangotti.github.io/Data-Science-Portfolio2/post/project-9/</link>
+      <pubDate>Mon, 13 Jan 2020 11:25:05 -0400</pubDate>
+      
+      <guid>https://kangotti.github.io/Data-Science-Portfolio2/post/project-9/</guid>
+      <description>We are delighted to be able to inform the reader, that during the whole of this scene, Gringoire and his piece had stood firm. His actors, spurred on by him, had not ceased to spout his comedy, and he had not ceased to listen to it. He had made up his mind about the tumult, and was determined to proceed to the end, not giving up the hope of a return of attention on the part of the public.</description>
+    </item>
+    
+    <item>
+      <title>Project__10: Data Science Project 3</title>
+      <link>https://kangotti.github.io/Data-Science-Portfolio2/post/project-10/</link>
+      <pubDate>Mon, 13 Jan 2020 11:25:05 -0400</pubDate>
+      
+      <guid>https://kangotti.github.io/Data-Science-Portfolio2/post/project-10/</guid>
+      <description>We are delighted to be able to inform the reader, that during the whole of this scene, Gringoire and his piece had stood firm. His actors, spurred on by him, had not ceased to spout his comedy, and he had not ceased to listen to it. He had made up his mind about the tumult, and was determined to proceed to the end, not giving up the hope of a return of attention on the part of the public.</description>
+    </item>
+    
+  </channel>
+</rss>

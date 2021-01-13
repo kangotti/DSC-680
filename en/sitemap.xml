@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://kangotti.github.io/Data-Science-Portfolio2/</loc>
+    <lastmod>2020-01-13T12:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://kangotti.github.io/Data-Science-Portfolio2/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kangotti.github.io/Data-Science-Portfolio2/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kangotti.github.io/Data-Science-Portfolio2/post/</loc>
+    <lastmod>2020-01-13T12:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://kangotti.github.io/Data-Science-Portfolio2/fr/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kangotti.github.io/Data-Science-Portfolio2/post/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kangotti.github.io/Data-Science-Portfolio2/post/project-1/</loc>
+    <lastmod>2020-01-13T11:25:05-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kangotti.github.io/Data-Science-Portfolio2/post/project-2/</loc>
+    <lastmod>2020-01-13T11:25:05-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kangotti.github.io/Data-Science-Portfolio2/post/project-3/</loc>
+    <lastmod>2020-01-13T11:25:05-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kangotti.github.io/Data-Science-Portfolio2/post/project-4/</loc>
+    <lastmod>2020-01-13T11:25:05-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kangotti.github.io/Data-Science-Portfolio2/post/project-5/</loc>
+    <lastmod>2020-01-13T11:25:05-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kangotti.github.io/Data-Science-Portfolio2/post/project-6/</loc>
+    <lastmod>2020-01-13T11:25:05-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kangotti.github.io/Data-Science-Portfolio2/post/project-7/</loc>
+    <lastmod>2020-01-13T11:25:05-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kangotti.github.io/Data-Science-Portfolio2/post/project-8/</loc>
+    <lastmod>2020-01-13T11:25:05-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kangotti.github.io/Data-Science-Portfolio2/post/project-9/</loc>
+    <lastmod>2020-01-13T11:25:05-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kangotti.github.io/Data-Science-Portfolio2/post/project-10/</loc>
+    <lastmod>2020-01-13T11:25:05-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kangotti.github.io/Data-Science-Portfolio2/about/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://kangotti.github.io/Data-Science-Portfolio2/categories/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://kangotti.github.io/Data-Science-Portfolio2/fr/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kangotti.github.io/Data-Science-Portfolio2/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kangotti.github.io/Data-Science-Portfolio2/contact/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://kangotti.github.io/Data-Science-Portfolio2/fr/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kangotti.github.io/Data-Science-Portfolio2/contact/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kangotti.github.io/Data-Science-Portfolio2/tags/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://kangotti.github.io/Data-Science-Portfolio2/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kangotti.github.io/Data-Science-Portfolio2/tags/"
+                />
+  </url>
+  
+</urlset>
